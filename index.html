@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="page-title">Adivinanzas</h1>
+    <div class="overlay-text visible">
+        Click para empezar
+    </div>
+    <div class="overlay-text" id="game-over-text">Game Over
+    <span class="overlay-text-small">Click para Empezar</span>
+    </div>
+    <div class="overlay-text" id="victory-text">Ganaste
+    <span class="overlay-text-small">Click para Empezar</span>
+    </div>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Tiempo <span id="time-remaining">100</span>
+            </div>
+            <div class="game-info">
+                Puntos <span id="flips">0</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i1.PNG" class="card-value" id="i1" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i2.PNG" class="card-value" id="i2" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i3.PNG" class="card-value" id="i3" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i4.PNG" class="card-value" id="i4" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i5.PNG" class="card-value" id="i5" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i6.PNG" class="card-value" id="i6" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i7.PNG" class="card-value" id="i7" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i8.PNG" class="card-value" id="i8" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i9.PNG" class="card-value" id="i9" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i10.PNG" class="card-value" id="i10" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i11.PNG" class="card-value" id="i11" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i12.PNG" class="card-value" id="i12" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i13.PNG" class="card-value" id="i13" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i14.PNG" class="card-value" id="i14" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i15.PNG" class="card-value" id="i15" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i1.PNG" class="card-value" id="i1" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i2.PNG" class="card-value" id="i2" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i3.PNG" class="card-value" id="i3" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i4.PNG" class="card-value" id="i4" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i5.PNG" class="card-value" id="i5" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i6.PNG" class="card-value" id="i6" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i7.PNG" class="card-value" id="i7" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i8.PNG" class="card-value" id="i8" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i9.PNG" class="card-value" id="i9" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i10.PNG" class="card-value" id="i10" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i11.PNG" class="card-value" id="i11" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i12.PNG" class="card-value" id="i12" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i13.PNG" class="card-value" id="i13" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i14.PNG" class="card-value" id="i14" alt="hermosa">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                    <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                  </svg>
+            </div>
+            <div class="card-front card-face">
+                <img src="./i15.PNG" class="card-value" id="i15" alt="hermosa">
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
