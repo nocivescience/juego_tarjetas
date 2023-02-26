@@ -67,12 +67,19 @@ body {
   height: 100%;
   border-radius: 6px;
   transition: transform 0.8s ease-in-out;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .game-container .card .card-face img {
   width: inherit;
   height: inherit;
   border-radius: inherit;
-  border: 6px red solid;
+  border: 6px black solid;
+}
+.game-container .card .card-face svg {
+  width: 100%;
+  height: 100%;
 }
 
 .card.visible .card-back {
@@ -144,13 +151,12 @@ body {
   }
 }
 .card-back {
-  background: #000;
-  border-color: #ffa600;
+  border: 6px black solid;
+  transform: scale(0.9);
+  background: white;
 }
 
 .card-front {
-  background: #ffa600;
-  border-color: #000;
   transform: rotateY(180deg);
 }
 
